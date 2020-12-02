@@ -1,0 +1,8 @@
+{
+  "home": {
+    "title": "Bienvenue sur UWind",
+    "logged": {
+      "message": "Vous êtes connecté en tant que \"{{username}}\"."
+    }
+  }
+}
