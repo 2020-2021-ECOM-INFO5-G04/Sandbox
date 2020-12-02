@@ -44,7 +44,6 @@ script:
   - ./uwind/mvnw -ntp checkstyle:check
   - ./uwind/mvnw -ntp clean verify
   - ./uwind/mvnw -ntp com.github.eirslett:frontend-maven-plugin:npm -Dfrontend.npm.arguments='run test' -Dmaven.repo.local=$MAVEN_USER_HOME
-  - if [ $TRAVIS_PULL_REQUEST == "false" ]; then ./uwind/mvnw -ntp org.jacoco:jacoco-maven-plugin:prepare-agent initialize sonar:sonar  --Dsonar.projectKey=2020-2021-ECOM-INFO5-G04 -Dsonar.login=$SONAR_TOKEN; fi
   - ./uwind/mvnw -ntp verify -Pprod -DskipTests
 
 #https://docs.travis-ci.com/user/deployment/azure-web-apps/
